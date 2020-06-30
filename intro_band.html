@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet"  href="css/intro_band.css">
+<title>バンド紹介</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+     $(function(){
+       // #で始まるリンクをクリックしたら実行されます
+       $('a[href^="#"]').click(function() {
+         // スクロールの速度
+         var speed = 400; // ミリ秒で記述
+         var href= $(this).attr("href");
+         var target = $(href == "#" || href == "" ? 'html' : href);
+         var position = target.offset().top;
+         $('body,html').animate({scrollTop:position}, speed, 'swing');
+         return false;
+       });
+     });
+   </script>
+</head>
+
+<body>
+<div class="return">
+<a href="index.html">Top<a>
+</div>
+
+<header class = "header">
+  僕はアカペラを聴かない<br>
+  <a>1月18日(土)南文化小劇場</a>
+</header>
+
+<div class="symbol">
+  <p >出演バンド</p><br>
+  <a href="#afo">アフォガードに夜を</a> <br>
+  <a href="#chapa">chapati</a> <br>
+  <a href="#paja">ぱじゃまる</a> <br>
+  <a href="#ryoku">緑黄鮭社会</a> <br>
+  <a href="#saza">さざんか</a> <br>
+  <a href="#taku">takumiyoshida</a> <br>
+  <a href="#yuno">ゆのみ</a> <br>
+  <a href="#zouk">ZOUK</a> <br>
+</div>
+
+<div class="title">
+  バンド紹介
+</div>
+
+<main>
+  <div class="band">
+    <div id="afo"></div>
+    <div class="name">
+      アフォガードに夜を
+    </div>
+    <div class="picture">
+      <img src="images/bands/afo.jpeg" width="400px">
+    </div>
+    <div class="text">
+      2,3回生混合グループ“アフォガードに夜を”です。<br>
+      冷たいアイスクリームに熱いエスプレッソをかけるアフォガードのように、情感の対比や
+      様々な表情をお魅せします。
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="chapa"></div>
+    <div class="name">
+      chapati
+    </div>
+    <div class="picture">
+      <img src="images/bands/chapa.jpeg" width="400px">
+    </div>
+    <div class="text">
+      こんにちは！chapatiです！<br>
+      懐かしの名曲を、暖かく和やかにお届けします。<br>
+      ノスタルジックなメロディーに是非耳を傾けてください！
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="paja"></div>
+    <div class="name">
+      ぱじゃまる
+    </div>
+    <div class = "picture">
+      <img src="images/bands/paja.jpeg" width="400px">
+    </div>
+    <div class="text">
+      おはよ〜！ぱじゃまるだよ〜〜！&#x2665;<br>
+      1/18はみんなをぱじゃまるのパジャマパーティーにご招待しちゃうまる！&#x2b50;<br>
+      みんな楽しむ準備はできてるかな？<br>
+      当日会場で待ってるまるよ〜〜！<br>&#x1f430;&#x2665;&#x2728;<br>
+      Twitterアカウントはこちら&#9993;@Pajamaru_jP
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="ryoku"></div>
+    <div class="name">
+      緑黄鮭社会
+    </div>
+    <div class="picture">
+      <img src="images/bands/ryoku.jpeg" width="400px">
+    </div>
+    <div class="text">
+      名古屋発4ピースバンド・緑黄色社会の楽曲をアカペラで表現しています。<br>
+      彩り豊かな一つ一つの楽曲の魅力、そして私たちの思いが皆さんに届くよう歌います。
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="saza"></div>
+    <div class="name">
+      さざんか
+    </div>
+    <div class="picture">
+      <img src="images/bands/saza.jpeg" width="400px">
+    </div>
+    <div class="text">
+      「今悩んでいる人の力に　これからの人生のお守りに」僕らの音楽よ、届け
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="taku"></div>
+    <div class="name">
+      takumiyoshida
+    </div>
+    <div class="picture">
+      <img src="images/bands/taku.jpeg" width="400px">
+    </div>
+    <div class="text">
+      男6人で生み出す”繊細かつ情感を揺さぶるサウンド”
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="yuno"></div>
+    <div class="name">
+      ゆのみ
+    </div>
+    <div class="picture">
+      <img src="images/bands/yuno.jpeg" width="400px">
+    </div>
+    <div class="text">
+      ご機嫌よう。3回生同期バンドゆのみです。<br>
+      ことばを奏でてつむぎ出す、たおやかな調べをご堪能ください。<br>
+      「日本の古き良き景色を」皆さまに。
+    </div>
+  </div>
+
+  <div class="band">
+    <div id="zouk"></div>
+    <div class="name">
+      ZOUK
+    </div>
+    <div class="picture">
+      <img src="images/bands/zouk.jpeg" width="400px">
+    </div>
+    <div class="text">
+      5人の個性を織り交ぜ、邦楽にはない洋楽の魅力を表現。『洋楽ってやっぱりかっこいい
+      』そう感じていただけるステージをお届けします！Are you ready to be into ZOUK?
+    </div>
+  </div>
+
+</main>
+
+
+<section id="sec05">
+	<header>
+		<h2><span>Access</span></h2>
+	</header>
+	<div class="innerS">
+		<ul>
+			<li>
+				<h1>南文化小劇場</h1>（<a href="https://www.bunka758.or.jp/scd06_top.html">https://www.bunka758.or.jp/scd06_top.html</a>）
+
+				<p>名古屋市南区千竈通2丁目10番地2</p><br>
+				<p>・地下鉄でお越しの方<br>
+				　地下鉄堀田駅(3番のりば)、鶴舞駅(3番のりば)、栄駅(18番のりば)より<br>
+				　市バス（基幹1号系統）「千竈通2丁目」下車すぐ<br><br>
+					・名鉄でお越しの方<br>
+					　名鉄堀田駅(北のりば)より市バス（基幹1号系統）「千竈通2丁目」下車すぐ<br>
+					　本笠寺駅または桜駅より徒歩20分<br><br>
+					・JRでお越しの方<br>
+				　笠寺駅より徒歩15分</p>
+								<br>
+			</li>
+			<li>
+				<div id="map">
+					<!-- GOOGLE MAP -->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.048813310554!2d136.92176831555474!3d35.10549198033254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037bb5da3fd4a7%3A0xdd15122e5922ab6d!2z5Y2X5paH5YyW5bCP5YqH5aC0!5e0!3m2!1sja!2sjp!4v1570850755083!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<!-- // GOOGLE MAP -->
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- // ACCESS -->
+
+</div>
+
+
+<footer id="footer">
+	<a href="http://jp-act.jp/index.php"><img src="images/jpact_logo.gif" style="text-align: center;"></a>
+	<br>
+	Copyright JP-act Winterlive2019. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank">http://f-tpl.com</a><!-- ←クレジット表記を外す場合はシリアルキーが必要です http://f-tpl.com/credit/ -->
+</footer>
+
+
+</body>
+
+</html>
